@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    string test = "faezeh";
+}
+@model string
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>@test</p>
+    <h1>@ViewBag.test</h1>
+    <h2>@Model</h2>
+    <form method="post" asp-action="Index" asp-controller="Home">
+        <input name="a" />
+        <input type="submit" />
+    </form>
+
+    <form method="post" asp-action="AddStudent" asp-controller="Home">
+     
+        <input type="submit" value="addstudent"/>
+    </form>
+</div>
