@@ -51,7 +51,6 @@ namespace TestMvc1.Controllers
 
 
         [HttpPost]
-
         public IActionResult AddStudent()
         {
             //var manager = new Manager()

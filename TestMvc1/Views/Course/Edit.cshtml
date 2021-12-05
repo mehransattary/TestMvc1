@@ -1,0 +1,25 @@
+﻿@model Course
+
+<div class="container">
+    <form asp-action="Edit" asp-controller="Course" method="post">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row">
+            <div class="col-md-6">
+
+                <input class="form-control" asp-for="C_name" required />
+                <span asp-validation-for="C_name"></span>
+            </div>
+            <div class="col-md-6">
+
+                <input class="form-control" asp-for="C_coeffient" required />
+                <span asp-validation-for="C_coeffient"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success" value="edit" />
+            </div>
+
+        </div>
+    </form>
+</div>
